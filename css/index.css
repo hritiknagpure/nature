@@ -1,0 +1,198 @@
+*{
+    margin: 0; padding: 0; box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Josefin Slab', serif;
+    font-family: 'Jost', sans-serif;
+}
+header{
+    width: 100%; height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1)), url('../images/zhen-hu-dO5quaqAYg0-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+nav{
+
+    width: 100%; height: 80px;
+    
+    color: rgb(255, 255, 255);
+    display: flex; justify-content: space-between;
+    align-items: center; text-transform: uppercase;
+    padding: 0px 50px 0px 100px;
+}
+nav .logo{
+    font-size: 20px;
+    text-decoration:solid;
+    color: #F8F8FF;
+    
+}
+nav ul{
+    display: flex;
+    list-style: none;
+   
+}
+nav ul li{
+    margin: 0 5px;
+ 
+}
+
+nav ul li a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 200;
+    letter-spacing: 1px;
+    padding: 10px 10px 10px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    transition: all 0.4s ease;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -ms-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+}
+nav ul li a:hover{
+    background-color: rgb(243, 235, 235);
+
+
+
+}nav .menu-btn i{
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    cursor: pointer;
+    display: none;
+}
+#click{
+    display: none;
+}
+@media (max-width: 900px){
+    nav .menu-btn i{
+        display: block;
+
+    }
+#click:checked ~.menu-btn i:before{
+        content: "\f00d";
+        
+    }
+nav ul{
+       position: fixed;
+       top: 10px;
+       left: -100%;
+       height: 80vh;
+       width: 100%;
+       display: block;
+       text-align: right;
+       padding: 30px 20px;
+       transition:all 0.3s ease ;
+       -webkikt-transition:;
+       -moz-transition:;
+       -ms-transition:;
+       -o-transition:;
+       -webkit-transition:;
+}
+#click:checked ~ ul{
+    left: 0%;
+    transition-duration: 1s;
+    text-align: ;
+}
+nav ul li{
+    margin: 30px 0;
+
+}
+
+}
+/*nav .menu{                      
+    width: 30%; 
+    display: flex; justify-content: space-around;
+}
+nav .menu a{
+    width: 30%;
+    text-decoration: none; color:#f8f8ff;
+    font-weight: bold;
+}
+*/
+
+
+main{
+    width: 100%;
+    height:85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+section{
+
+}
+section h3{
+    color:#F8F8FF;
+    font-size: 30px; font-style: 200; letter-spacing: 2px;
+    text-shadow: 1px 1px 2px black;
+}
+section h1{
+      margin: 10px 0 20px 0;
+    font-size: 35px;
+    font-weight: 500;
+    text-shadow: 2px 1px 5px black;
+    text-transform: uppercase;
+
+}
+section p{
+    font-size: 15px;
+    word-spacing: 1px;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px  black;
+    margin-top: 10px;
+}
+section a{
+    padding: 12px 30px;
+    border-radius: 4px;
+    outline: none;
+    text-transform: uppercase;
+    font-size: 10px;
+    font-weight: 400;
+    text-decoration: none;
+    letter-spacing: 1px;
+    transition: all.5s ease ;
+    -webkit-transition: all.5s ease ;
+    -moz-transition: all.5s ease ;
+    -ms-transition: all.5s ease ;
+    -o-transition: all.5s ease ;
+}
+section .btnone{
+    background: #fff;
+    color: #000;
+
+}
+.btnone:hover{
+    background: #00b894;
+    color: white;
+
+}
+
+section .btntwo{
+    background: #00b894;
+    color: white;
+}
+.btntwo:hover{
+    background: #fff;
+    color: #000;
+}
+.change_content:after{
+    content: '';
+    animation: changetext 10s infinite linear;
+    color: #58e6c9;
+    
+}
+@keyframes changetext{
+    0%{content: "WildFlower";}
+    20%{content: "Areca palm";}
+    34%{content: "Herb";}
+    400%{content: "Bamboo plants";}
+    50%{content: "Palm tree";}
+}
+
